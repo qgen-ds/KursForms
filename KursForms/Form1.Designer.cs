@@ -36,7 +36,7 @@ namespace KursForms
             this.TSMI_Save = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.видToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.шрифтToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_Font = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,16 +101,17 @@ namespace KursForms
             // видToolStripMenuItem
             // 
             this.видToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.шрифтToolStripMenuItem});
+            this.TSMI_Font});
             this.видToolStripMenuItem.Name = "видToolStripMenuItem";
             this.видToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.видToolStripMenuItem.Text = "Вид";
             // 
-            // шрифтToolStripMenuItem
+            // TSMI_Font
             // 
-            this.шрифтToolStripMenuItem.Name = "шрифтToolStripMenuItem";
-            this.шрифтToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.шрифтToolStripMenuItem.Text = "Шрифт";
+            this.TSMI_Font.Name = "TSMI_Font";
+            this.TSMI_Font.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_Font.Text = "Шрифт";
+            this.TSMI_Font.Click += new System.EventHandler(this.TSMI_Font_Click);
             // 
             // Form1
             // 
@@ -139,7 +140,7 @@ namespace KursForms
         private System.Windows.Forms.ToolStripMenuItem TSMI_Save;
         private System.Windows.Forms.ToolStripMenuItem TSMI_Exit;
         private System.Windows.Forms.ToolStripMenuItem видToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem шрифтToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_Font;
     }
 }
 

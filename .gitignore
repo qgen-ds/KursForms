@@ -67,3 +67,4 @@ dkms.conf
 .vs/
 *.user
 *.pdf
+*.doc*

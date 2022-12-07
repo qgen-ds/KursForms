@@ -42,6 +42,7 @@ namespace KursForms
         }
         private void PaintText()
         {
+            int i = rtb.SelectionStart;
             rtb.SelectAll();
             rtb.SelectionColor = rtb.ForeColor;
             rtb.DeselectAll();
@@ -59,7 +60,7 @@ namespace KursForms
                     }
                 }
             }
-            rtb.Select(rtb.Text.Length, 0);
+            rtb.SelectionStart = i;
         }
         private void TSMI_Exit_Click(object sender, EventArgs e)
         {
@@ -94,6 +95,15 @@ namespace KursForms
                 isOpened = true;
                 Text = CurFile + " – " + ProgramName;
                 rtb.SaveFile(CurFile, RichTextBoxStreamType.UnicodePlainText);
+            }
+        }
+
+        private void TSMI_Font_Click(object sender, EventArgs e)
+        {
+            FontDialog fd = new FontDialog();
+            if(fd.ShowDialog() == DialogResult.OK)
+            {
+                rtb.Font = fd.Font;
             }
         }
     }
